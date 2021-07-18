@@ -8,167 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-        <style type="text/css">
-        * {
-            padding: 0;
-            margin: 0;
-            border: 0;
-            list-style: none;
-            box-sizing: border-box;            
-        }
-        a {
-            text-decoration: none;
-        }
-        body {
-            font-family: 'Open Sans', sans-serif;
-        }
-        header {
-            background-color: #eee;
-            padding: 20px;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }        
-        .flex {
-            display: flex;
-        }
-        header img.logo {
-            margin: 0 20px;
-        }
-        header div {
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        header div ul {
-            justify-content: center;
-        }
-        header div ul li {
-            margin: 0 5px;
-        }
-        nav#menu-principal {
-            background-color: #000;
-            color: #fff;
-        }
-        @media (max-width: 460px) {
-            header div {
-                justify-content: flex-start; 
-            }
-            header a {
-                margin: 0 auto;
-            }
-            header ul {
-                margin: 10px auto;
-            }
-        }
-
-
-        /* MENU */
-        @media (min-width: 991px) {
-            #menu-principal div {
-                max-width: 800px;
-                width: 100%;
-                margin: 0 auto;
-                display: block;
-            }    
-            .list-menu {
-                display: flex!important;
-                justify-content: space-between;
-                width: 100%;
-                box-shadow: 2px 9px 49px -17px rgba(0, 0, 0, 0.3);
-            }
-            .item-menu {
-                flex: auto;
-            }
-            .item-menu a {
-                padding: 15px;
-                color: #fff;
-                display: block;
-                transition: .4s;
-                cursor: pointer;
-                text-align: center
-            }
-            .item-menu a:hover {
-                background: #666;
-                color: #fff;
-            }
-            .navegacao-mobile {
-                display: none!important;
-            }                
-        }
-        .navegacao-mobile {
-            background: #000;
-            padding: 10px;
-            display: block;
-            width: 53px;
-            cursor: pointer;
-        }
-        .linha-menu {
-            width: 25px;
-            height: 3px;
-            border-radius: 5px;
-            margin: 4px;
-            background-color: #fff;
-            display: block;
-        }
-        .input-menu-all {
-            display: none!important;
-        }
-        .list-menu {
-            display: none;
-            width: 100%;
-            box-shadow: 2px 9px 49px -17px rgba(0, 0, 0, 0.3);
-        }
-        .item-menu {
-            flex: auto;
-        }
-        .item-menu a {
-            padding: 15px;
-            color: #fff;
-            display: block;
-            transition: .4s;
-            cursor: pointer;
-            text-align: center
-        }
-        .input-menu-all:checked ~ .list-menu {
-            display: block;
-        }
-        .input-menu-all:checked ~ .list-menu a  {
-            text-align: left;
-        }        
-        /* CONTEUDO */
-        main .banner {
-            background-color: rgb(248, 248, 248);
-        }
-        main .banner img {
-            width: 100%;
-        }
-        main .apresentacao {
-            padding: 20px;
-        }
-        main h1 {
-            display: block;
-            margin: 0 auto;
-            text-align: center;
-        }
-        main .apresentacao .nova-linha {
-            margin-top: 30px;
-            align-items: center;
-        }
-        @media (max-width: 700px) {
-            main .apresentacao .nova-linha {
-                flex-wrap: wrap;
-            }
-        }
-        main .apresentacao .nova-linha img {
-            margin: 0 auto;
-        }
-        main .apresentacao .nova-linha p {
-            padding: 20px;
-            margin: 0 auto;
-        }
-        </style>
+        <link href="./assets/css/style.css" rel="stylesheet">
     </head>
     <body>
 
@@ -195,7 +35,6 @@
                     <ul class="list-menu">
                         <li class="item-menu"><a href="" title="">Sobre a nova linha</a></li>
                         <li class="item-menu"><a href="" title="">Modelos</a></li>
-                        <li class="item-menu"><a href="" title="">Onde comprar</a></li>
                         <li class="item-menu"><a href="" title="">Desconto Exclusivo</a></li>
                     </ul>
                 </label>
@@ -218,11 +57,60 @@
                     <p>Preocupada com o cotidiano de seus clientes e com sua busca por tecnologia e facilidade, a Mondial, marca líder no segmento de eletrodomésticos portáteis, lança dois modelos de robôs aspiradores, o Fast Clean Plus RB-03 e o Fast Clean Advanced RB-04. Ambos foram desenvolvidos com alta tecnologia, design moderno e chegam ao mercado com preços acessíveis. Possuem controle remoto com comandos para iniciar e pausar a limpeza, botões de direcionamento, controle de percurso e três funções de limpeza pré-programadas. A bateria confere uma autonomia de 90 minutos em uso e tempo de carregamento de quatro a seis horas. Os novos modelos passam pano enquanto limpam, devido a função MOP, são equipados com filtro HEPA, permanente e lavável, que retém ácaros e bactérias. Ambos podem ser usados em pisos frios, madeira, carpetes e tapetes baixos.</p>
                 </div>
 
+                <h2>Conheça as linha</h2>
+
             </div>
+
+            <section class="produtos">
+                <div class="container">
+
+                    <div class="linha-produto flex">
+                        <img src="./assets/images/robo-aspirador-rb-03.jpg" alt="Robô Aspirador de Pó Fast Clean Plus" title="Robô Aspirador de Pó Fast Clean Plus" />
+                        <div class="descricao">
+                            <h3>Robô Aspirador de Pó Fast Clean Plus</h3>
+                            <p>Varre, aspira e limpa com apenas 1 toque! Mais praticidade e comodidade para manter a casa sempre limpa, pois conta com controle remoto que possui comandos para iniciar e pausar a limpeza, botões para direcionar e controlar o percurso e 3 funções de limpeza pré-programadas. <a href="#desconto" title="Quero meu desconto!" class="botao-desconto">Quero meu desconto!</a></p>
+                        </div>
+                    </div>
+
+                    <div class="linha-produto flex inverter-ordem">
+                        <div class="descricao">
+                            <h3>Robô Aspirador de Pó Fast Clean Advanced</h3>
+                            <p>Varre, aspira e limpa com apenas 1 toque! O robô aspirador Fast Clean Advanced retorna sozinho à base carregadora quando estiver com baixa carga de bateria. Além disso, o controle remoto traz praticidade e comodidade para manter a casa sempre limpa, pois conta com comandos para iniciar e pausar a limpeza, botões para direcionar e controlar o percurso e 3 funções de limpeza pré-programadas! <a href="#desconto" title="Quero meu desconto!" class="botao-desconto">Quero meu desconto!</a></p>
+                        </div>                   
+                        <img src="./assets/images/robo-aspirador-rb-04.jpg" alt="Robô Aspirador de Pó Fast Clean Advanced" title="Robô Aspirador de Pó Fast Clean Advanced" />
+                    </div>
+                    
+                    <div class="linha-produto flex">
+                        <img src="./assets/images/robo-aspirador-rb-01.jpg" alt="Robô Aspirador de Pó Fast Clean" title="Robô Aspirador de Pó Fast Clean" />
+                        <div class="descricao">
+                            <h3>Robô Aspirador de Pó Fast Clean</h3>
+                            <p>O robô aspirador de pó é um grande aliado nos cuidados da casa, pois garante uma limpeza eficiente. Com programação inteligente, ele suga detritos e poeiras até mesmo embaixo de móveis, passando por cadeiras, mesas, sofás e camas, já que conta com design compacto, que permite alcançar as áreas mais difíceis, com praticidade e comodidade. <a href="#desconto" title="Quero meu desconto!" class="botao-desconto">Quero meu desconto!</a></p>
+                        </div>
+                    </div>                    
+
+                </div>
+            </section>
+
+            <section class="desconto-exclusivo">
+                <div class="container">
+                    <h2>Receba um desconto exclusivo!</h2>
+                    <p>Insira seu e-mail e receba um desconto exclusivo para sua compra:</p>
+                    <input type="email" name="email" id="email" placeholder="seuemail@email.com" />
+                    <button name="submit" type="submit" class="enviar" onclick="enviaEmail();">Enviar</button>
+                </div>
+            </section>
 
         </main>
 
-        
+        <footer>
+            <div class="container">
+                <p>Este é um site fictício, preços, promoções e informações são meramente ilustrativas.</p>
+            </div>
+        </footer>
+
+
+
+        <script src="./assets/js/js.js"></script>
 
     </body>
 </html>
